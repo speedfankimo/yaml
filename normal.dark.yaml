@@ -7,7 +7,7 @@ sources:
 
 scene:
   background:
-    color: global.land_color
+    color: rgb(245,248,250)
   sky:
     zenith: '#010405'
     horizon: '#010405'
