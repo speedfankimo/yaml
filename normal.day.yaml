@@ -24,16 +24,6 @@ layers:
         font:
           stroke:
             width: .5px
-    rail:
-      zoom: {min: 10}
-      line:
-        width: [[15, 1px], [16, 1.5px], [17, 1.5px], [18, 2px], [19, 2.5px]]
-        dash: [7, 7]
-      outline:
-        width: [[10, .1px], [13, .5px], [14, .8px]]
-    under_construction:
-      line:
-        dash: [2, 2]
     highway:
       label:
         font:
