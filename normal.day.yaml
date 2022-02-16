@@ -13,6 +13,30 @@ layers:
       polygons:
         order: 1
         color: 'rgb(153, 206, 255)'
-  highway_fill: [
-    [13, 'rgb(24,144,179)']
-  ]
+  road:
+    default:
+      line:
+        width: 1px
+      direction:
+        size: [[15, 15px], [18, 30px], [20, 52px]]
+        spacing: [[16, 150px], [18, 250px]]
+      label:
+        font:
+          stroke:
+            width: .5px
+    rail:
+      zoom: {min: 10}
+      line:
+        width: [[15, 1px], [16, 1.5px], [17, 1.5px], [18, 2px], [19, 2.5px]]
+        dash: [7, 7]
+      outline:
+        width: [[10, .1px], [13, .5px], [14, .8px]]
+    under_construction:
+      line:
+        dash: [2, 2]
+    highway:
+      label:
+        font:
+          size: [30px]
+      outline:
+        width: [[7, 0px], [8, 0.5px]]
