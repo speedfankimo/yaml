@@ -13,83 +13,14 @@ layers:
       polygons:
         order: 1
         color: 'rgb(153, 206, 255)'
-  roads:
-    data: {source: omv, layer: roads}
-    draw:
-      lines:
-        order: 340
-        join: round
-        cap: round
-        # for debugging not-styled roads
-        # color: red
+    road:
+    default:
+      line:
         width: 1px
-        outline:
-            order: 352
-    shields:
-      filter:
-        all:
-          - kind: [highway, major_road, minor_road]
-          - ref: true
-          - global.feature_min_zoom_filter
-      draw:
-        shields:
-          priority: 45
-          visible: false
-      default_priority_motorway:
-        filter:
-          kind_detail: motorway
-        draw:
-          shields:
-            priority: 40
-            visible: global.shields_visible
-      default_priority_trunk:
-        filter:
-          all:
-            - kind_detail: trunk
-        draw:
-          shields:
-            priority: 41
-            visible: global.shields_visible
-      default_priority_primary:
-        filter:
-          kind_detail: primary
-        draw:
-          shields:
-            priority: 42
-            visible: global.shields_visible
-      default_priority_secondary:
-        filter:
-          kind_detail: secondary
-        draw:
-          shields:
-            priority: 43
-            visible: global.shields_visible
-      default_priority_tertiary:
-        filter:
-          kind_detail: tertiary
-        draw:
-          shields:
-            priority: 44
-            visible: global.shields_visible
-      default_minor_road:
-        filter:
-          kind: minor_road
-        draw:
-          shields:
-            priority: 45
-            visible: global.shields_visible
-    directions:
-      filter:
-        all:
-          - $zoom: { min: 16 }
-          - oneway: yes
-      draw:
-        points:
-          priority: 500
-          texture: icon_library
-          sprite: lane-arrow-day--arrow
-          placement: spaced
-          size: 26px
-          placement_spacing: 150px
-          angle: auto
-          flat: true
+      direction:
+        size: [[15, 15px], [18, 30px], [20, 52px]]
+        spacing: [[16, 150px], [18, 250px]]
+      label:
+        font:
+          stroke:
+            width: .5px
