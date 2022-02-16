@@ -13,20 +13,34 @@ layers:
       polygons:
         order: 1
         color: 'rgb(153, 206, 255)'
-  road:
-    default:
-      line:
+  roads:
+    data:
+      source: omv
+      layer: roads
+    draw:
+      lines:
+        order: 10
         width: 1px
-      direction:
-        size: [[15, 15px], [18, 30px], [20, 52px]]
-        spacing: [[16, 150px], [18, 250px]]
-      label:
-        font:
-          stroke:
-            width: .5px
+        color: 'rgb(23, 16, 25)'
     highway:
-      label:
-        font:
-          size: [30px]
-      outline:
-        width: [[7, 20px], [8, 5px]]
+      filter:
+        kind: highway
+      draw:
+        lines:
+          order: 1
+          color: 'rgb(213, 116, 25)'
+          width: 3px
+          outline:
+            color: 'rgb(213, 116, 25)'
+            width: [[7, 0px], [8, 0.5px]]
+    major_road:
+      filter:
+        kind: major_road
+      draw:
+        lines:
+          order: 2
+          color: 'rgb(13, 116, 25)'
+          width: 2px
+          outline:
+            color: 'rgb(13, 116, 25)'
+            width: [[7, 0px], [8, 0.5px]]
