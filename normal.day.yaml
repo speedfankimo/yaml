@@ -13,14 +13,12 @@ layers:
       polygons:
         order: 1
         color: 'rgb(153, 206, 255)'
-  road:
-    default:
-      line:
-        width: 1px
-      direction:
-        size: [[15, 15px], [18, 30px], [20, 52px]]
-        spacing: [[16, 150px], [18, 250px]]
-      label:
-        font:
-          stroke:
-            width: .5px
+  roads:
+    data:
+      source: omv
+      layer: water
+    draw:
+      lines:
+        order: 340
+        width: 2px
+        color: 'rgb(43, 26, 255)'
