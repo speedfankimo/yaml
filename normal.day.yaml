@@ -1,6 +1,18 @@
-import:
-  - ../skeleton.yaml
-  - ../road_shields.day.yaml
+sources:
+  omv:
+    type: OMV
+    max_zoom: 17
+    min_display_zoom: 1
+    tiled: true
+
+scene:
+  background:
+    color: global.land_color
+  sky:
+    zenith: '#010205'
+    horizon: '#010205'
+    fog: '#21262B'
+    
 global:
 
   ######################################################  SCENE  #######################################################
