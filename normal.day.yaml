@@ -13,12 +13,4 @@ layers:
       polygons:
         order: 1
         color: 'rgb(153, 206, 255)'
-  roads:
-    data:
-      source: omv
-      layer: water
-    draw:
-      lines:
-        order: 2
-        width: 2px
-        color: 'rgb(43, 26, 255)'
+
