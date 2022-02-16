@@ -1,6 +1,10 @@
-import:
-  - ../skeleton.yaml
-  - ../road_shields.day.yaml
+sources:
+  omv:
+    type: OMV
+    max_zoom: 17
+    min_display_zoom: 1
+    tiled: true
+    
 global:
 
   ######################################################  SCENE  #######################################################
