@@ -1,29 +1,15 @@
 sources:
   omv:
     type: OMV
-    max_zoom: 17
-    min_display_zoom: 1
-    tiled: true
-
 scene:
   background:
-    color: rgb(245,248,250)
-  sky:
-    zenith: '#010405'
-    horizon: '#010405'
-    fog: '#21262B'
-    
-highway:
-      filter:
-        kind: highway
-      draw:
-        lines:
-          order: 30px
-          color: rgb(50,100,30)
-          width: 31px
-          outline:
-            color: rgb(50,100,30)
-            width: [[7, 0px], [8, 0.5px]]
-        center-lines:
-          color: rgb(50,100,30)
-          width: [[10, 0px], [11, 1px]]
+    color: 'rgb(255, 255, 255)'
+layers:
+  water:
+    data:
+      source: omv
+      layer: water
+    draw:
+      polygons:
+        order: 1
+        color: 'rgb(153, 206, 255)'
