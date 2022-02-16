@@ -9,8 +9,8 @@ scene:
   background:
     color: global.land_color
   sky:
-    zenith: '#010205'
-    horizon: '#010205'
+    zenith: '#010405'
+    horizon: '#010405'
     fog: '#21262B'
 
 global:
