@@ -5,13 +5,15 @@ sources:
     min_display_zoom: 1
     tiled: true
     
+scene:
+  background:
+    color: global.land_color
+  sky:
+    zenith: '#010205'
+    horizon: '#010205'
+    fog: '#21262B'
+    
 global:
-
-  ######################################################  SCENE  #######################################################
-  scene_background_color: rgb(245,248,250)
-  scene_sky_zenith_color: '#347BC0'
-  scene_sky_horizon_color: '#EDF2F9'
-  scene_sky_fog_color: '#FFFFFF'
 
   ##################################################  TEXT / LABELS  ###################################################
   text_font_family: FiraGO
