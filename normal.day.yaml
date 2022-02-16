@@ -19,6 +19,6 @@ layers:
       layer: water
     draw:
       lines:
-        order: 340
+        order: 2
         width: 2px
         color: 'rgb(43, 26, 255)'
