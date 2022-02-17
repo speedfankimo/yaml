@@ -3,7 +3,7 @@ sources:
     type: OMV
 scene:
   background:
-    color: 'rgb(255, 155, 255)'
+    color: 'rgb(45, 210, 103 )'
 layers:
   water:
     data:
