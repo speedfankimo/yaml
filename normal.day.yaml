@@ -60,10 +60,10 @@ layers:
       draw:
         polygons:
           order: 3
-          color: 'rgb(123, 106, 125)'
+          color: 'rgb(211,211,211)'
           extrude: function() {return feature.height || 5;}
         lines:
           order: 3
-          color: 'rgb(123, 116, 25)'
+          color: 'rgb(211,211,211)'
           width: 0.7px
           extrude: function() {return feature.height || 5;}
