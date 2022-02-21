@@ -9,7 +9,7 @@ styles:
             color: [0.055, 0.604, 0.914, 1.00]
 scene:
   background:
-    color: 'rgb(212, 227, 176)'
+    color: 'rgb(212, 255, 255)'
 layers:
   water:
     data:
@@ -26,7 +26,7 @@ layers:
     draw:
       dashed-lines:
         order: 5
-        width: 2px
+        width: 1px
     highway:
       filter:
         kind: highway
@@ -34,7 +34,7 @@ layers:
         lines:
           order: 1
           color: 'rgb(213, 116, 25)'
-          width: 4px
+          width: 2px
           outline:
             color: 'rgb(213, 116, 25)'
             width: [[7, 0px], [8, 0.5px]]
