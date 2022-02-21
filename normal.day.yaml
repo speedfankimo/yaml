@@ -49,4 +49,27 @@ layers:
           outline:
             color: 'rgb(13, 116, 25)'
             width: [[7, 0px], [8, 0.5px]]
+    buildings:
+      data: {source: omv, layer: buildings}
+        draw:
+      polygons:
+        order: 4
+        color: 'rgb(13, 16, 25)'
+      ines:
+        order: 4
+        color: 'rgb(13, 116, 25)'
+        width: 1px
+    extrude:
+      filter:
+        $zoom: { min: 15}
+      draw:
+        polygons:
+          order: 3
+          color: 'rgb(211,211,211)'
+          extrude: function() {return feature.height || 5;}
+        lines:
+          order: 3
+          color: 'rgb(211,211,211)'
+          width: 0.7px
+          extrude: function() {return feature.height || 5;}
  
