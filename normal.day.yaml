@@ -25,7 +25,7 @@ layers:
       layer: roads
     draw:
       dashed-lines:
-        order: 5
+        order: 10
         width: 1px
     highway:
       filter:
