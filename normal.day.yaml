@@ -9,7 +9,7 @@ styles:
             color: [0.055, 0.604, 0.914, 1.00]
 scene:
   background:
-    color: 'rgba(212, 227, 176, 0.69)'
+    color: 'rgb(212, 227, 176)'
 layers:
   water:
     data:
@@ -34,7 +34,7 @@ layers:
         lines:
           order: 1
           color: 'rgb(213, 116, 25)'
-          width: 3px
+          width: 4px
           outline:
             color: 'rgb(213, 116, 25)'
             width: [[7, 0px], [8, 0.5px]]
@@ -45,7 +45,7 @@ layers:
         lines:
           order: 2
           color: 'rgb(13, 116, 25)'
-          width: 2px
+          width: 3px
           outline:
             color: 'rgb(13, 116, 25)'
             width: [[7, 0px], [8, 0.5px]]
