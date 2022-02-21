@@ -6,7 +6,7 @@ styles:
         base: lines
         draw:
             dash: [2, 2]
-            color: [0.155, 0.604, 0.914, 1.00]
+            color: [0.555, 0.304, 0.914, 1.00]
 scene:
   background:
     color: 'rgb(188, 174, 174)'
@@ -26,7 +26,7 @@ layers:
     draw:
       dashed-lines:
         order: 10
-        width: 0.5px
+        width: 0.7px
     highway:
       filter:
         kind: highway
