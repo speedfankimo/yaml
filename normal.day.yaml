@@ -66,4 +66,4 @@ layers:
         polygons:
           order: 3
           color: 'rgb(211,211,211)'
-          extrude: function() {return featu
+          extrude: function() {return feature.height || 5;}
