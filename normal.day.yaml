@@ -5,11 +5,11 @@ styles:
     dashed-lines:
         base: lines
         draw:
-            dash: [2, 2]
+            dash: [3, 2]
             color: [0.055, 0.604, 0.914, 1.00]
 scene:
   background:
-    color: 'rgba(rgba212, 227, 176, 0.69)'
+    color: 'rgba(212, 227, 176, 0.69)'
 layers:
   water:
     data:
@@ -26,7 +26,7 @@ layers:
     draw:
       dashed-lines:
         order: 5
-        width: 1px
+        width: 2px
     highway:
       filter:
         kind: highway
